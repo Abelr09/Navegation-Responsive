@@ -1,0 +1,108 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    }
+    h1{
+        font-size: 2rem;
+        line-height: 1.3em;
+    }
+    .container{
+        width: 85%;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    .header{
+        background: #333;
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .header a{
+        text-decoration: none;
+        padding: 2rem 0;
+        color: white;
+    }
+    .logo-nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo{
+        letter-spacing: 15px;
+        font-size: 1.2em;
+    }
+    .navegation ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    
+    }
+    .navegation ul.show{
+        display: block;
+    }
+    .navegation ul li{
+        display: inline-block;
+    
+    }
+    .navegation ul li a{
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear ;
+        border-radius: 5px;
+    }
+    .navegation ul li a:hover {
+        background: rgb(105, 100, 100);
+    }
+    .view-menu{
+        display: none;
+    
+    }
+    
+    @media only screen and (max-width: 767px){
+        .view-menu{
+            display: block;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+    
+        }
+        .view-menu:hover{
+            background: rgb(105, 100, 100);
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear ;
+            border-radius: 5px;
+        }
+        .navegation{
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .navegation ul{
+    
+            display: none;
+        }
+        .navegation ul.show{
+    
+            display: block;
+        }
+        .navegation ul li{
+            display: block;
+        
+        }
+     
+        .navegation ul li a{
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.4s linear ;
+            border-radius: 5px;
+        }
+        .navegation ul li a:hover {
+            background: rgb(105, 100, 100);
+    }
+    }
